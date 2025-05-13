@@ -8,6 +8,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/landing', function () {
+    return view('pages.landing.index'); // folder 'pages/landing', file 'index.blade.php'
+})->name('landing');
+
 Route::resource('login', FlaskAuthController::class)->only(['index', 'store']);
     Route::get('logout', [FlaskAuthController::class, 'destroy'])->name('logout');
 
@@ -18,3 +22,13 @@ Route::middleware('flask.auth')->group(function() {
         return view('pages.admin.dashboard.index');
     })->name('dashboard.index');
 });
+
+Route::get('/data-user', function () {
+    return view('pages.data-user.index');
+});
+
+Route::get('/data-pasien', function () {
+    return view('pages.data-pasien.index');
+});
+
+

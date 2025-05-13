@@ -6,8 +6,7 @@
         <img src="{{ asset('assets/admin/images/logo-dark.svg') }}" class="img-fluid logo-lg" alt="logo">
       </a>
     </div>
-    <div class="navbar-content">
-      <ul class="pc-navbar">
+    <div class="navbar-content">       
         <li class="pc-item">
           <a href="../dashboard/index.html" class="pc-link">
             <span class="pc-micon"><i class="ti ti-dashboard"></i></span>
@@ -20,21 +19,35 @@
           <i class="ti ti-dashboard"></i>
         </li>
         <li class="pc-item">
-          <a href="../elements/bc_typography.html" class="pc-link">
-            <span class="pc-micon"><i class="ti ti-typography"></i></span>
-            <span class="pc-mtext">Typography</span>
+          <a href="{{ url('data-user') }}" class="pc-link">
+            <span class="pc-micon"><i class="ti ti-users"></i></span>
+            <span class="pc-mtext">Data User</span>
           </a>
         </li>
+
         <li class="pc-item">
-          <a href="../elements/bc_color.html" class="pc-link">
-            <span class="pc-micon"><i class="ti ti-color-swatch"></i></span>
-            <span class="pc-mtext">Color</span>
+          <a href="{{ url('data-pasien') }}" class="pc-link">
+            <span class="pc-micon"><i class="ti ti-users"></i></span>
+            <span class="pc-mtext">Data Pasien</span>
+          </a>
+        </li>
+
+        <li class="pc-item">
+          <a href="../elements/icon-tabler.html" class="pc-link">
+            <span class="pc-micon"><i class="ti ti-plant-2"></i></span>
+            <span class="pc-mtext">Input Pemeriksaan</span>
           </a>
         </li>
         <li class="pc-item">
           <a href="../elements/icon-tabler.html" class="pc-link">
             <span class="pc-micon"><i class="ti ti-plant-2"></i></span>
-            <span class="pc-mtext">Icons</span>
+            <span class="pc-mtext">Riwayat Pemeriksaan</span>
+          </a>
+        </li>
+        <li class="pc-item">
+          <a href="../elements/icon-tabler.html" class="pc-link">
+            <span class="pc-micon"><i class="ti ti-plant-2"></i></span>
+            <span class="pc-mtext">Export Laporan</span>
           </a>
         </li>
 
@@ -52,6 +65,12 @@
           <a href="../pages/register.html" class="pc-link">
             <span class="pc-micon"><i class="ti ti-user-plus"></i></span>
             <span class="pc-mtext">Register</span>
+          </a>
+        </li>
+        <li class="pc-item">
+          <a href="../pages/register.html" class="pc-link">
+            <span class="pc-micon"><i class="ti ti-user-plus"></i></span>
+            <span class="pc-mtext">Logout</span>
           </a>
         </li>
 
