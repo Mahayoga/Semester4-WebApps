@@ -31,4 +31,8 @@ Route::get('/data-pasien', function () {
     return view('pages.data-pasien.index');
 });
 
+Route::get('/data-prediksi', function () {
+    return view('pages.data-prediksi.index');
+});
+
 
