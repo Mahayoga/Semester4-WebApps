@@ -101,16 +101,6 @@
                                             </td>
                                         </tr>
                                     </tbody>
-                                    <tfoot>
-                                        <tr>
-                                            <th>No</th>
-                                            <th>Nama</th>
-                                            <th>Umur</th>
-                                            <th>Jenis Kelamin</th>
-                                            <th>Alamat</th>
-                                            <th>Aksi</th>
-                                        </tr>
-                                    </tfoot>
                                 </table>
                             </div>
                         </div>
