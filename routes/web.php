@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\FlaskAuthController;
+use App\Http\Controllers\PasienController;
 use App\Http\Controllers\RegisterController;
 use Illuminate\Support\Facades\Route;
 
@@ -21,14 +22,13 @@ Route::middleware('flask.auth')->group(function() {
     Route::get('/dashboard', function () {
         return view('pages.admin.dashboard.index');
     })->name('dashboard.index');
+
+    Route::resource('/data-pasien', PasienController::class);
+        Route::get('/get/data-pasien', [PasienController::class, 'getDataPasien'])->name('pasien.getDataPasien');
 });
 
 Route::get('/data-user', function () {
     return view('pages.data-user.index');
-});
-
-Route::get('/data-pasien', function () {
-    return view('pages.data-pasien.index');
 });
 
 Route::get('/data-prediksi', function () {

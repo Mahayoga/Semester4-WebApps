@@ -26,7 +26,7 @@
         </li>
 
         <li class="pc-item">
-          <a href="{{ url('data-pasien') }}" class="pc-link">
+          <a href="{{ route('data-pasien.index') }}" class="pc-link">
             <span class="pc-micon"><i class="ti ti-users"></i></span>
             <span class="pc-mtext">Data Pasien</span>
           </a>
