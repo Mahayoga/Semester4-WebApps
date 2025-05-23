@@ -8,6 +8,6 @@ class UserController extends Controller
 {
     public function index()
     {
-        return view('data-user'); // Mengarahkan ke view data-pasien
+        return view('pages.admin.data-user.index'); // Mengarahkan ke view data-pasien
     }
 }

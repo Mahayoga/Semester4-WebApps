@@ -8,6 +8,6 @@ class PrediksiController extends Controller
 {
     public function index()
     {
-        return view('pages.data-prediksi.index'); // Mengarahkan ke view data-prediksi
+        return view('pages.admin.data-prediksi.index'); // Mengarahkan ke view data-prediksi
     }
 }

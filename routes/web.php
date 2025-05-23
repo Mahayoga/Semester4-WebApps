@@ -28,11 +28,11 @@ Route::middleware('flask.auth')->group(function() {
 });
 
 Route::get('/data-user', function () {
-    return view('pages.data-user.index');
+    return view('pages.admin.data-user.index');
 });
 
 Route::get('/data-prediksi', function () {
-    return view('pages.data-prediksi.index');
+    return view('pages.admin.data-prediksi.index');
 });
 
 
