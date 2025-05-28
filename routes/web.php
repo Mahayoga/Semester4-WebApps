@@ -6,10 +6,6 @@ use App\Http\Controllers\RegisterController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/landing', function () {
     return view('pages.landing.index'); // folder 'pages/landing', file 'index.blade.php'
 })->name('landing');
 
@@ -23,8 +19,8 @@ Route::middleware('flask.auth')->group(function() {
         return view('pages.admin.dashboard.index');
     })->name('dashboard.index');
 
-    Route::resource('/data-pasien', PasienController::class);
-        Route::get('/get/data-pasien', [PasienController::class, 'getDataPasien'])->name('pasien.getDataPasien');
+Route::resource('/data-pasien', PasienController::class);
+    Route::get('/get/data-pasien', [PasienController::class, 'getDataPasien'])->name('pasien.getDataPasien');
 });
 
 Route::get('/data-user', function () {
@@ -33,6 +29,10 @@ Route::get('/data-user', function () {
 
 Route::get('/data-prediksi', function () {
     return view('pages.admin.data-prediksi.index');
+});
+
+Route::get('/menu-prediksi', function () {
+    return view('pages.admin.menu-prediksi.index');
 });
 
 

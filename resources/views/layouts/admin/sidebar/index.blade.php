@@ -35,10 +35,17 @@
         <li class="pc-item">
           <a href="{{ url('data-prediksi') }}" class="pc-link">
             <span class="pc-micon"><i class="ti ti-users"></i></span>
-            <span class="pc-mtext">Data Prediksi</span>
+            <span class="pc-mtext">Riwayat Prediksi</span>
           </a>
         </li>
         
+        <li class="pc-item">
+          <a href="../elements/icon-tabler.html" class="pc-link">
+            <span class="pc-micon"><i class="ti ti-plant-2"></i></span>
+            <span class="pc-mtext">Menu Prediksi</span>
+          </a>
+        </li>
+
         <li class="pc-item">
           <a href="../elements/icon-tabler.html" class="pc-link">
             <span class="pc-micon"><i class="ti ti-plant-2"></i></span>
