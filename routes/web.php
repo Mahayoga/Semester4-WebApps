@@ -3,6 +3,7 @@
 use App\Http\Controllers\FlaskAuthController;
 use App\Http\Controllers\PasienController;
 use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\MenuPrediksiController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -31,8 +32,6 @@ Route::get('/data-prediksi', function () {
     return view('pages.admin.data-prediksi.index');
 });
 
-Route::get('/menu-prediksi', function () {
-    return view('pages.admin.menu-prediksi.index');
-});
+Route::get('/admin/menu-prediksi', [MenuPrediksiController::class, 'index'])->name('menu.prediksi');
 
 

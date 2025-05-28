@@ -40,15 +40,15 @@
         </li>
         
         <li class="pc-item">
-          <a href="../elements/icon-tabler.html" class="pc-link">
-            <span class="pc-micon"><i class="ti ti-plant-2"></i></span>
+          <a href="{{ route('menu.prediksi') }}" class="pc-link">
+            <span class="pc-micon"><i class="ti ti-ad-2"></i></span>
             <span class="pc-mtext">Menu Prediksi</span>
           </a>
         </li>
 
         <li class="pc-item">
           <a href="../elements/icon-tabler.html" class="pc-link">
-            <span class="pc-micon"><i class="ti ti-plant-2"></i></span>
+            <span class="pc-micon"><i class="ti ti-download"></i></span>
             <span class="pc-mtext">Export Laporan</span>
           </a>
         </li>

@@ -6,9 +6,12 @@ use Illuminate\Http\Request;
 
 class MenuPrediksiController extends Controller
 {
-      
+    /**
+     * Menampilkan halaman form prediksi diabetes
+     */
     public function index()
     {
-        return view('pages.admin.menu-prediksi.index'); // Mengarahkan ke view data-prediksi
+        // Mengarahkan ke file resources/views/pages/admin/menu-prediksi/index.blade.php
+        return view('pages.admin.menu-prediksi.index');
     }
 }

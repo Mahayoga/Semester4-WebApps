@@ -6,11 +6,13 @@
 <div class="container mt-4">
     <h4 class="mb-4">Form Prediksi Diabetes</h4>
     
+    <form method="POST" action="#"> {{-- Ganti "#" jika nanti ingin menghubungkan ke route --}}
         @csrf
 
         <div class="form-group mb-3">
             <label for="pregnancies" class="form-label">Jumlah Kehamilan</label>
             <input name="pregnancies" id="pregnancies" type="number" class="form-control" placeholder="Contoh: 2" required>
+            <small class="form-text text-muted">*Jika Anda laki-laki, isikan dengan angka 0</small>
         </div>
 
         <div class="form-group mb-3">
