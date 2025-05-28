@@ -4,6 +4,7 @@ use App\Http\Controllers\FlaskAuthController;
 use App\Http\Controllers\PasienController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\MenuPrediksiController;
+use App\Http\Controllers\LaporanController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -33,5 +34,8 @@ Route::get('/data-prediksi', function () {
 });
 
 Route::get('/admin/menu-prediksi', [MenuPrediksiController::class, 'index'])->name('menu.prediksi');
+
+Route::get('/admin/laporan', [LaporanController::class, 'index'])->name('laporan.index');
+
 
 

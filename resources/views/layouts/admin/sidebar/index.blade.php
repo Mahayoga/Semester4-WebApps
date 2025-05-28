@@ -46,12 +46,12 @@
           </a>
         </li>
 
-        <li class="pc-item">
-          <a href="../elements/icon-tabler.html" class="pc-link">
+       <li class="pc-item">
+          <a href="{{ route('laporan.index') }}" class="pc-link">
             <span class="pc-micon"><i class="ti ti-download"></i></span>
             <span class="pc-mtext">Export Laporan</span>
           </a>
-        </li>
+      </li>
 
         <li class="pc-item pc-caption">
           <label>Pages</label>
