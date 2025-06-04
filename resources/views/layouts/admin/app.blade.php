@@ -64,6 +64,7 @@
   <script src="{{ asset('assets/admin/js/pages/dashboard-default.js') }}"></script>
   <!-- [Page Specific JS] end -->
   <!-- Required Js -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="{{ asset('assets/admin/js/plugins/popper.min.js') }}"></script>
   <script src="{{ asset('assets/admin/js/plugins/simplebar.min.js') }}"></script>
   <script src="{{ asset('assets/admin/js/plugins/bootstrap.min.js') }}"></script>

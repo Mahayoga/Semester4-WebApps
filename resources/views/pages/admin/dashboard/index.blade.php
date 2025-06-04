@@ -1,4 +1,5 @@
 @extends('layouts.admin.app')
+@section('title', 'Dashboard')
 @section('content')
   <!-- [ breadcrumb ] start -->
   <div class="page-header">

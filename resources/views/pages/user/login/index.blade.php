@@ -72,32 +72,6 @@
             <div class="d-grid mt-4">
               <button type="button" class="btn btn-primary" onclick="doLogin()">Login</button>
             </div>
-            <div class="saprator mt-3">
-              <span>Login with</span>
-            </div>
-            <div class="row">
-              <div class="col-4">
-                <div class="d-grid">
-                  <button type="button" class="btn mt-2 btn-light-primary bg-light text-muted">
-                    <img src="{{ asset('assets/admin/images/authentication/google.svg') }}" alt="img"> <span class="d-none d-sm-inline-block"> Google</span>
-                  </button>
-                </div>
-              </div>
-              <div class="col-4">
-                <div class="d-grid">
-                  <button type="button" class="btn mt-2 btn-light-primary bg-light text-muted">
-                    <img src="{{ asset('assets/admin/images/authentication/twitter.svg') }}" alt="img"> <span class="d-none d-sm-inline-block"> Twitter</span>
-                  </button>
-                </div>
-              </div>
-              <div class="col-4">
-                <div class="d-grid">
-                  <button type="button" class="btn mt-2 btn-light-primary bg-light text-muted">
-                    <img src="{{ asset('assets/admin/images/authentication/facebook.svg') }}" alt="img"> <span class="d-none d-sm-inline-block"> Facebook</span>
-                  </button>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
         <div class="auth-footer row">
@@ -119,6 +93,7 @@
   </div>
   <!-- [ Main Content ] end -->
   <!-- Required Js -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="{{ asset('assets/admin/js/plugins/popper.min.js') }}"></script>
   <script src="{{ asset('assets/admin/js/plugins/simplebar.min.js') }}"></script>
   <script src="{{ asset('assets/admin/js/plugins/bootstrap.min.js') }}"></script>
@@ -141,10 +116,18 @@
         if(this.readyState == 4 && this.status == 200) {
           let data = JSON.parse(this.responseText);
           if(data.status == 'success') {
-            alert('Login Berhasil!');
+            Swal.fire({
+              title: "Login Berhasil!",
+              text: "Anda akan diarahkan kedalam dashboard",
+              icon: "success"
+            });
             window.location = '{{ route("dashboard.index") }}';
           } else {
-            alert('Login Gagal!');
+            Swal.fire({
+              title: "Login Gagal!",
+              text: "Mungkin salah pada email atau password",
+              icon: "error"
+            });
           }
         }
       }
